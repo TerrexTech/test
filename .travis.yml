@@ -1,0 +1,17 @@
+dist: trusty
+
+language: minimal
+
+# Only clone the most recent commit
+git:
+  depth: 1
+
+branches:
+  except:
+    - staging.tmp
+
+before_script:
+  - chmod +x ./run_test.sh
+
+script:
+  - ./run_test.sh
