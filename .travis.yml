@@ -3,10 +3,7 @@ dist: trusty
 services:
   - docker
 
-language: go
-
-go:
-  - "1.11"
+language: minimal
 
 branches:
   except:
@@ -43,7 +40,7 @@ addons:
 #   - ./test/setup_mongo.sh
 
 script:
-  - echo "==============="
+  - echo "================="
   # - go test -v -race ./...
   # - go run ./examples/example.go
 
